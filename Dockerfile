@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM larvacent/php:${PHP_VERSION}-base
+FROM larvacent/php:${PHP_VERSION}-fpm-base
 
 LABEL maintainer="support@larvacent.com"
 
