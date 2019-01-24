@@ -74,8 +74,7 @@ RUN set -xe \
 COPY image-files/ /
 
 # forward request and error logs to docker log collector
-RUN chmod +x /usr/local/bin/docker-entrypoint \
-	&& chmod +x /usr/local/bin/docker-entrypoint \
+RUN chmod +x /usr/local/bin/supervisord-foreground \
 	&& ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log \
 	&& {\
