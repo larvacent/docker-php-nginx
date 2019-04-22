@@ -6,7 +6,7 @@ LABEL maintainer="support@larvacent.com"
 ARG NGINX_VERSION
 
 # Environment settings
-ENV NGINX_VERSION=${NGINX_VERSION:-1.15.8}
+ENV NGINX_VERSION=${NGINX_VERSION}
 ENV NGINX_TGZ_URL http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz
 ENV NGINX_INI_DIR=/usr/local/etc/nginx
 
