@@ -7,7 +7,7 @@ services:
 
 env:
   global:
-    - NGINX_VERSION=1.15.12
+    - NGINX_VERSION=1.16.0
   matrix:
 ##    5.6
     - VERSION=5.6 VARIANT=nginx PHP_VERSION=5.6.40
